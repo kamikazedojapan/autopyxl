@@ -7,10 +7,10 @@ driver = webdriver.Chrome()
 driver.get('https://url.com')
 
 # Extrair todos os títulos
-dados1 = driver.find_elements(By.XPATH,"tag[@attibuto='']")
+dados1 = driver.find_elements(By.XPATH,"//tag[@attibuto='']")
 
 # Extrair os preços
-dados2 = driver.find_elements(By.XPATH,"//tag[@attibuto=''']")
+dados2 = driver.find_elements(By.XPATH,"//tag[@attibuto='']")
 
 # Inserir os títulos e preços na planilhas
 book = openpyxl.Workbook()
